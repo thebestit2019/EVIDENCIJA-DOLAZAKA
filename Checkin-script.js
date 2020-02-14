@@ -3,25 +3,15 @@
 //  pom iz valiable for insert id
 
 function CheckChar(){
-
-   
     if(pom.length === 4)
     //  call function for check id in base 
     document.getElementById("d").innerHTML = "Uspesno prosao test broja karaktera";
-
     else{
         if(pom.length < 4)
         alert("Uneli ste nedovoljan broj karaktera");
         else
-        alert("Uneli ste previse karaktera, pokusajte ponovo");
-        
-        //  Insert functio for delate caracter or only delete caracter in string
-        
+        alert("Uneli ste previse karaktera, pokusajte ponovo");  
+        pom = "M"; //  Insert functio for delate caracter or only delete caracter in string pom = ""   
     }
-    
-    
-
-
-  
-
+    document.getElementById("d").innerHTML = pom;
 }
