@@ -28,9 +28,9 @@ body, html{
 }
 
 .btn{
-    height: 4.3em;
-    width: 4.3em;
-    margin: 0.3em;
+    height: 70px;
+    width: 70px;
+    margin: 0.2em;
     border: solid rgb(0, 0, 0) 2px;
     border-radius: 25%;
     color: black;
@@ -39,7 +39,11 @@ body, html{
 }
 #accept{
     background-color: rgba(10, 241, 87, 0.856);
+    font-size: medium;
+
 }
 #reset{
     background-color: rgba(3, 90, 250, 0.849);
+    font-size: medium;
+    
 }
