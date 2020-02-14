@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Administrator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Admin.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div id="img">
+            <img src="imgs/logo.jpg" id="slika" alt=" " height="100" width="100">
+        </div>     
+        <div id="cont">
+            <div>
+                <label for="jmbg">Jmbg</label>
+                <input class="content" id="jmbg" type="text" placeholder="JMBG radnika">
+            </div>
+            <div>
+                <label>PIN radnika</label>
+                <input class="content text" type="text" placeholder="PIN radnika">
+            </div>
+            <div>
+                <label>Ime radnika</label>
+                <input class="content text" type="text" placeholder="Ime radnika">
+            </div>
+            <div>
+                <label>Prezime ranika</label>
+                <input class="content text" type="text" placeholder="Prezime radnika">
+            </div>
+            <div>
+                <label>Radno mesto</label>
+                <select class="content text" name="Radno mesto" id="radno mesto">
+                    <option value="bez titule">bez titule</option>
+                    <option value="Doktor">Doktor</option>
+                    <option value="Sestra">Sestra</option>
+                    <option value="Laborant">Laborant</option>
+                    <option value="Higijeničar">Higijeničar</option>
+                    <option value="Administrativni radnik">Administrativni radnik</option>
+                    <option value="Vozač">Vozač</option>
+                </select>
+            </div>
+            <div>
+                <label>Funkcija</label>
+                <select class="content Funkcija" name="Funkcija" id="funkcija">
+                    <option value="bez funkcije">bez funkcije</option>
+                    <option value="Načelnik">Načelnik</option>
+                    <option value="Direktor">Direktor</option>
+                    <option value="Glavna sestra">Glavna sestra</option>
+                    <option value="Šef">Bez titule</option>
+                </select>
+            </div>
+            <div>
+                <label>Služba</label>
+                <select class="content Sluzba" name="Služba" id="sluzba">
+                    <option value="Bez službe">Bez službe</option>
+                    <option value="Opšta">Opšta</option>
+                    <option value="Ginekologija">Ginekologija</option>
+                    <option value="Specijalistička">Specijalistička</option>
+                    <option value="Stomatologija">Stomatologija</option>
+                    <option value="Laboratorija">Laboratorija</option>
+                    <option value="Računovodstvo">Računovodstvo</option>
+                    <option value="Pravna">Pravna</option>
+                </select>
+            </div>
+            <div>
+                <label>Početak I smene</label>
+                <input class="content vreme" type="time" placeholder="Pocetak I smene" value="07:00">
+            </div>
+            <div>
+                <label>Kraj I smene</label>
+                <input class="content time" type="time" placeholder="Kraj I smene">
+            </div>
+            <div>
+                <label>Početak II smene</label>
+                <input class="content time" type="time" placeholder="Pocetak II smene">
+            </div>
+            <div>
+                <label>Kraj II smene</label>
+                <input class="content time" type="time" placeholder="Kraj II smene">
+            </div>
+        </div>
+    <div id="btns">
+        <input class="content btn" type="submit" name="Prosledi" value="Unesi">
+        <input class="content btn" type="submit" name="Izmeni" value="Izmeni">
+    </div>
+    </div>
+    <script src="Admin.js" async defer></script>
+</body>
+
+</html>

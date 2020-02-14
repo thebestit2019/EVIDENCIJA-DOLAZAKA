@@ -1,0 +1,35 @@
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+#img{
+    display: flex;
+    width: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#cont{
+width: 70%;
+background-color: rgb(170, 241, 211, 0.4);
+
+}
+#btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20%;
+}
+div, label{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+.content{
+    width: 90%;
+}
+.cont, div, label{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+} 
