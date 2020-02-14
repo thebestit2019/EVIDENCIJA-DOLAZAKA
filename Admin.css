@@ -18,6 +18,7 @@ background-color: rgb(170, 241, 211, 0.4);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     width: 20%;
 }
 div, label{
@@ -31,5 +32,5 @@ div, label{
 .cont, div, label{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 } 
