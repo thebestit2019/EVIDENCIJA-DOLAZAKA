@@ -1,17 +1,19 @@
 
- var pom = "proba"; 
-//  pom iz valiable for insert id
-
+ 
 function CheckChar(){
-    if(pom.length === 4)
-    //  call function for check id in base 
-    document.getElementById("d").innerHTML = "Uspesno prosao test broja karaktera";
+    var pom = document.getElementById("input").value;     //  pom iz valiable for insert id
+    if(pom.length === 4){
+    //  call function for check id in base
+     
+    // /document.getElementById("d").innerHTML = "Uspesno prosao test broja karaktera";  onlu for test
+    alert("Uneli ste dovoljan broj karaktera");
+    }
     else{
         if(pom.length < 4)
         alert("Uneli ste nedovoljan broj karaktera");
         else
         alert("Uneli ste previse karaktera, pokusajte ponovo");  
-        pom = "M"; //  Insert functio for delate caracter or only delete caracter in string pom = ""   
+        pom = ""; //  Insert functio for delate caracter or only delete caracter in string pom = ""   
     }
-    document.getElementById("d").innerHTML = pom;
+    document.getElementById("input").value = "";
 }
