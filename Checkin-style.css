@@ -1,0 +1,45 @@
+body, html{
+    width: 100%;
+    margin: 0;
+}
+
+#date, #date_container, #time, #time_container, #display, #display_container, #pin_container, #pin{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    font-size: large;
+    border: none;
+    
+}
+
+#date, #time{
+    font-size: 1.6em;
+}
+
+#display{
+   font-size: 2.4em; 
+}
+
+#pin_container, #pin{
+    height: auto;
+    
+}
+
+.btn{
+    height: 4.3em;
+    width: 4.3em;
+    margin: 0.3em;
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 25%;
+    color: black;
+    background-color: #a8e4fc;
+    font-size: 1.2em;
+}
+#accept{
+    background-color: rgba(10, 241, 87, 0.856);
+}
+#reset{
+    background-color: rgba(3, 90, 250, 0.849);
+}
