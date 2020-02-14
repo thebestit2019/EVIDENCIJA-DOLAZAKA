@@ -83,3 +83,60 @@ function reset(){
     console.log("PIN " + PIN);
 }
   
+
+
+
+
+
+
+
+
+//var pom; 
+function CheckChar(){
+    //pom = document.getElementById("display").value;   //  pom iz valiable for insert id
+    if(PIN.length == 4){
+                 
+                CheckPIN();    //  call function for check id in base
+     
+                                // /document.getElementById("d").innerHTML = "Uspesno prosao test broja karaktera";  onlu for test
+                
+    }
+    else{
+        if(PIN.length < 4)
+        alert("Uneli ste nedovoljan broj karaktera");
+        else
+        alert("Uneli ste previse karaktera, pokusajte ponovo");  
+         //  Insert functio for delate caracter or only delete caracter in string pom = ""   
+         
+    }
+   // document.getElementById("display").value = "";
+   reset();
+}
+
+
+
+
+
+
+
+function CheckPIN(){
+
+    var niz = new Array(); // there iz line for insert conection vith sql base 
+    niz = ['2345','1234','3456','4567']; //test
+    var p = false;
+    let i = 0;
+
+    for (let i = 0; i < niz.length; i++) {
+        if(niz[i] == PIN)
+        {
+           // document.getElementById("d").innerHTML = "Uspesno ste se prijavili kao " + pom;
+            p = true;
+            alert("Uspesno ste se logovali");
+        }
+    }
+    if(p == false){
+            alert("Uneli ste pogresan pin broj karaktera");
+    }
+}
+
+
