@@ -1,3 +1,8 @@
+body, html{
+    width: 100%;
+    margin: 0;
+}
+
 #date, #date_container{
     width: 100%;
     height: 45px;
@@ -5,4 +10,15 @@
     background-color: #08265aaf;
     color: white;
     font-size: large;
+    border: none;
+    
+}
+#time, #time_container{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: #08265aaf;
+    color: white;
+    font-size: large;
+    border: none;
 }
