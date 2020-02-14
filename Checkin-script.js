@@ -1,16 +1,16 @@
 
- var pom = 3; 
+ var pom = "proba"; 
 //  pom iz valiable for insert id
 
 function CheckChar(){
 
    
-    if(pom === 4)
+    if(pom.length === 4)
     //  call function for check id in base 
     document.getElementById("d").innerHTML = "Uspesno prosao test broja karaktera";
 
     else{
-        if(pom < 4)
+        if(pom.length < 4)
         alert("Uneli ste nedovoljan broj karaktera");
         else
         alert("Uneli ste previse karaktera, pokusajte ponovo");
