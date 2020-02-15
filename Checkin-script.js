@@ -1,3 +1,4 @@
+
 let date = document.getElementById("date");
 let dateObj = new Date();
 let dd = dateObj.getDate();
@@ -95,6 +96,7 @@ function reset(){
 function CheckChar(){
     //pom = document.getElementById("display").value;   //  pom iz valiable for insert id
     if(PIN.length == 4){
+
                  
                 CheckPIN();    //  call function for check id in base
      
@@ -102,6 +104,7 @@ function CheckChar(){
                 
     }
     else{
+
         if(PIN.length < 4)
         alert("Uneli ste nedovoljan broj karaktera, pokusajte ponovo");
         else
@@ -112,6 +115,7 @@ function CheckChar(){
    // document.getElementById("display").value = "";
    reset();
 }
+
 
 
 
@@ -138,5 +142,6 @@ function CheckPIN(){
             alert("Uneli ste pogresan pin, pokusajte ponovo");
     }
 }
+
 
 
