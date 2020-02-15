@@ -1,4 +1,5 @@
 
+
 let date = document.getElementById("date");
 let dateObj = new Date();
 let dd = dateObj.getDate();
@@ -85,23 +86,13 @@ function reset(){
 }
   
 
-
-
-
-
-
-
-
 //var pom; 
 function CheckChar(){
     //pom = document.getElementById("display").value;   //  pom iz valiable for insert id
     if(PIN.length == 4){
 
-                 
                 CheckPIN();    //  call function for check id in base
-     
-                                // /document.getElementById("d").innerHTML = "Uspesno prosao test broja karaktera";  onlu for test
-                
+                               // /document.getElementById("d").innerHTML = "Uspesno prosao test broja karaktera";  onlu for test          
     }
     else{
 
@@ -109,18 +100,11 @@ function CheckChar(){
         alert("Uneli ste nedovoljan broj karaktera, pokusajte ponovo");
         else
         alert("Uneli ste previse karaktera, pokusajte ponovo");  
-         //  Insert functio for delate caracter or only delete caracter in string pom = ""   
-         
+
     }
    // document.getElementById("display").value = "";
    reset();
 }
-
-
-
-
-
-
 
 
 function CheckPIN(){
@@ -132,10 +116,11 @@ function CheckPIN(){
 
     for (let i = 0; i < niz.length; i++) {
         if(niz[i] == PIN)
-        {
-           // document.getElementById("d").innerHTML = "Uspesno ste se prijavili kao " + pom;
+        {    // document.getElementById("d").innerHTML = "Uspesno ste se prijavili kao " + pom;
             p = true;
             alert("Uspesno ste se logovali");
+            Login(); //call function for login or login2
+
         }
     }
     if(p == false){
@@ -143,5 +128,16 @@ function CheckPIN(){
     }
 }
 
+
+
+function Login(){ 
+    var ansver = window.confirm("Da li ste to vi " + PIN); // insert name and other parameter for person
+    if(ansver){
+        alert("Uspesno ste se logovali"); // inserf function for take photography
+    }
+    else{
+        alert("Niste se logovali");
+    }
+}
 
 
