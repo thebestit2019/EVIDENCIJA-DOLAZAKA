@@ -1,5 +1,5 @@
 
-
+//<<<< Shows date
 let date = document.getElementById("date");
 let dateObj = new Date();
 let dd = dateObj.getDate();
@@ -7,9 +7,11 @@ let mm = dateObj.getMonth() + 1;
 let yyyy = dateObj.getFullYear();
 
 if (mm < 10) {
-    mm = '0' + mm
+    mm = '0' + mm // adds 0 in front of numbers < 10
 }
+//>>>>
 
+//<<<< Shows time
 date.value = dd + '.' + mm + '.' + yyyy;
 
 function startTime() {
@@ -26,7 +28,9 @@ function checkTime(i) {
 if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+//>>>>
 
+//<<<< Shows . or * in display object when PIN is entered and adds entered number in PIN variable
 let display = document.getElementById("display");
 let PIN = '';
 
@@ -76,7 +80,9 @@ function input(value){
     console.log("PIN " + PIN);
     
 }
+//>>>> 
 
+//<<<< Function for reset button. Makes PIN variable and display empty
 document.getElementById("reset").addEventListener("click", reset);
 
 function reset(){
@@ -84,7 +90,7 @@ function reset(){
     PIN = '';
     console.log("PIN " + PIN);
 }
-  
+//>>>>
 
 //var pom; 
 function CheckChar(){
