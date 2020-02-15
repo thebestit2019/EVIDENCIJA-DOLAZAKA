@@ -103,7 +103,7 @@ function CheckChar(){
     }
     else{
         if(PIN.length < 4)
-        alert("Uneli ste nedovoljan broj karaktera");
+        alert("Uneli ste nedovoljan broj karaktera, pokusajte ponovo");
         else
         alert("Uneli ste previse karaktera, pokusajte ponovo");  
          //  Insert functio for delate caracter or only delete caracter in string pom = ""   
@@ -135,7 +135,7 @@ function CheckPIN(){
         }
     }
     if(p == false){
-            alert("Uneli ste pogresan pin broj karaktera");
+            alert("Uneli ste pogresan pin, pokusajte ponovo");
     }
 }
 
