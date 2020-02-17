@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj": {}
+    "E:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj": {}
   },
   "projects": {
-    "e:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj": {
+    "E:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj",
+        "projectUniqueName": "E:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj",
         "projectName": "EVIDENCIJA-DOLAZAKA",
-        "projectPath": "e:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj",
+        "projectPath": "E:\\Projekti\\EVIDENCIJA-DOLAZAKA\\EVIDENCIJA-DOLAZAKA.csproj",
         "packagesPath": "C:\\Users\\Ikica\\.nuget\\packages\\",
-        "outputPath": "e:\\Projekti\\EVIDENCIJA-DOLAZAKA\\obj\\",
+        "outputPath": "E:\\Projekti\\EVIDENCIJA-DOLAZAKA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -45,6 +45,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Newtonsoft.json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

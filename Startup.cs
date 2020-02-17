@@ -24,7 +24,8 @@ namespace EVIDENCIJA_DOLAZAKA
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-
+            
+            services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,15 +39,18 @@ namespace EVIDENCIJA_DOLAZAKA
             app.UseRouting();
             app.UseMvc();
             app.UseStaticFiles();
-            app.UseHttpsRedirection();
+            app.UseFileServer();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
-            });
+            app.UseHttpsRedirection();
+        
+
+            // app.UseEndpoints(endpoints =>
+            // {
+            //     endpoints.MapGet("/", async context =>
+            //     {
+            //         await context.Response.WriteAsync("Hello World!");
+            //     });
+            // });
         }
     }
 }

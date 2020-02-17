@@ -115,7 +115,7 @@ function CheckChar(){
 
 function CheckPIN(){
 
-    var niz = new Array(); // there iz line for insert conection vith sql base 
+   /* var niz = new Array(); // there iz line for insert conection vith sql base 
     niz = ['2345','1234','3456','4567']; //test
     var p = false;
     let i = 0;
@@ -131,13 +131,29 @@ function CheckPIN(){
     }
     if(p == false){
             alert("Uneli ste pogresan pin, pokusajte ponovo");
-    }
+    } */
+    let allPINs;
+    fetch(`/api/${PIN}`).then(resp => {return resp.json}).then(emp => {
+       alert(emp.pin);
+    })
+
+    
 }
 
 
 
+
 function Login(){ 
-    var ansver = window.confirm("Da li ste to vi " + PIN); // insert name and other parameter for person
+    let name, surname, position, department;
+
+    fetch(`/api/${PIN}`).then(resp => {return resp.json}).then(employee => {
+        name = employee.ime;
+        surname = employee.prezime;
+        position = employee.funkcija;
+        department = employee.sluzba;
+    });
+
+    var ansver = window.confirm(name + ' ' + surname + "\n" + position + "\n" + department); // insert name and other parameter for person
     if(ansver){
         alert("Uspesno ste se logovali"); // inserf function for take photography
     }
