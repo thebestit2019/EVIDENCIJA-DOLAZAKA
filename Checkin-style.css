@@ -31,7 +31,6 @@ body, html{
     height: 70px;
     width: 70px;
     margin: 0.2em;
-
     border: solid rgba(7, 11, 61, 0.322) 1.5px;
     border-radius: 5%;
     color: black;
@@ -41,25 +40,13 @@ body, html{
 .btn:focus{
     background-color: black;
 }
-/* #accept{
-    background-color: rgba(0, 219, 0, 0.856);
-    border: solid rgb(0, 0, 0) 2px;
-    border-radius: 25%;
-    color: black;
-    background-color: #a8e4fc;
-    font-size: 1.2em;
-}
 #accept{
-    background-color: rgba(10, 241, 87, 0.856); */
-
+    background-color: rgba(0, 219, 0, 0.856);
     font-size: medium;
 
 }
 #reset{
-
     background-color: rgba(35, 38, 241, 0.733);
-/*     background-color: rgba(3, 90, 250, 0.849); */
-
     font-size: medium;
     
 }
