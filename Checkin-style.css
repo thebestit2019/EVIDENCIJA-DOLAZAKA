@@ -37,9 +37,7 @@ body, html{
     background-image:repeating-linear-gradient(rgba(44, 133, 133, 0.219), rgba(83, 83, 221, 0.527));
     font-size: 1.2em;
 }
-.btn:focus{
-    background-color: black;
-}
+
 #accept{
     background-color: rgba(0, 219, 0, 0.856);
     font-size: medium;
