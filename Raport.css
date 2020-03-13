@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+#headerdiv{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-bottom: 2%;
+    width: 100%;
+}
+#img{
+/* display: flex; */
+width: 20%;
+}
+#header{
+    width: 80%;
+    /* display: flex; */
+}
+
+#conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+#img{
+    display: flex;
+    width: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contheader{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(170, 241, 211, 0.4);
+    
+}
+
+#btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contheader{
+    display: flex;
+    justify-content: space-evenly;
+}

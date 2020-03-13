@@ -16,11 +16,21 @@
 </head>
 
 <body>
-   <h1>Administratorski modul</h1>
-    <div class="conteiner">
+   <div id="headerdiv">
         <div id="img">
             <img src="imgs/logo.jpg" id="slika" alt=" " height="100" width="100">
-        </div>     
+        </div> 
+        <div id="header">  
+            <h1>Administratorski modul</h1>
+        </div>
+    </div>
+
+    <div class="conteiner">
+
+        <div id="left">
+                <h6>left</h6>
+        </div>
+        
         <div id="cont">
             <div>
                 <label for="jmbg">Jmbg</label>
@@ -90,10 +100,11 @@
                 <input class="content time" type="time" placeholder="Kraj II smene">
             </div>
         </div>
-    <div id="btns">
-        <input class="content btn" type="submit" name="Prosledi" value="Unesi">
-        <input class="content btn" type="submit" name="Izmeni" value="Izmeni">
-    </div>
+        
+        <div id="right">
+            <input class="content btn" type="submit" name="Prosledi" value="Unesi">
+            <input class="content btn" type="submit" name="Izmeni" value="Izmeni">
+        </div>
     </div>
     <script src="Admin.js" async defer></script>
 </body>

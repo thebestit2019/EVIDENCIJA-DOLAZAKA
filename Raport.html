@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Raport</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Raport.css">
+    </head>
+    <body>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+            <div id="headerdiv">
+                <div id="img">
+                    <img src="imgs/logo.jpg" id="slika" alt=" " height="100em" width="100em">
+                </div>
+                
+                <div id="header">
+                    <h1>Raport strana</h1>
+                </div>
+            </div>
+
+            <div id="btns">
+                <input class="content btn" type="submit" name="Prosledi" value="Prosledi">
+                <input class="content btn" type="submit" name="Resetuj" value="Resetuj">
+                <input class="content btn" type="submit" name="Štampaj" value="Štampaj">
+            </div>
+            
+            <div class="conteiner">
+                
+                <div id="contheader">
+                    <div>
+                        <label>Početak</label>
+                        <input class="content vreme" type="datetime" placeholder="Početak I smene" value="00:00">
+                    </div>
+                    
+                    <div>
+                        <label>Kraj</label>
+                        <input class="content vreme" type="datetime" placeholder="Kraj filtera" value="23:59">
+                    </div>
+                    <div>
+                        <label>Zaposleni</label>
+                        <select class="content Zaposleni" name="Zaposleni" id="Zaposleni">
+                            <option value="Bez službe">_nije izabrano</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Služba</label>
+                        <select class="content Sluzba" name="Služba" id="sluzba">
+                            <option value="Bez službe">_nije izabrano</option>
+                            <option value="Opšta">Opšta</option>
+                            <option value="Ginekologija">Ginekologija</option>
+                            <option value="Specijalistička">Specijalistička</option>
+                            <option value="Stomatologija">Stomatologija</option>
+                            <option value="Laboratorija">Laboratorija</option>
+                            <option value="Računovodstvo">Računovodstvo</option>
+                            <option value="Pravna">Pravna</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="contres">
+                    <h2>Rezultati</h2>
+                </div>
+            
+        </div>
+        <script src="Raport.js" async defer></script>
+    </body>
+</html>
